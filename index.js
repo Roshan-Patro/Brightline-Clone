@@ -1,4 +1,3 @@
-
 import {navbar} from './modules/navbar.js';
 
 let navbar_container = document.querySelector('nav');
