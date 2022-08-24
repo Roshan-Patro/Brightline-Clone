@@ -1,4 +1,9 @@
 /* ..........Navbar code  style Sheet.......... */
+body{
+    margin: 0px;
+    margin-top: 0px;
+    padding: 0px;
+}
 #navbar{
     width: 100%;
     height: 100px;
@@ -126,8 +131,8 @@
         position: fixed;
         display: flex;
         flex-direction: column;
-        width: 45px;
-        height: 40px;
+        width: 40px;
+        height: 30px;
         margin-top: 25px;
         margin-left: 85%;
         cursor: pointer;
@@ -144,7 +149,7 @@
         flex-direction: column;
         width: 45px;
         height: 40px;
-        margin-top: -26px;
+        margin-top: -25px;
         margin-left: 86%;
         cursor: pointer;
     }
@@ -181,8 +186,8 @@
         position: fixed;
         display: flex;
         flex-direction: column;
-        width: 45px;
-        height: 40px;
+        width: 40px;
+        height: 30px;
         margin-top: 25px;
         margin-left: 85%;
         cursor: pointer;
@@ -198,13 +203,13 @@
         display: none;
         flex-direction: column;
         width: 45px;
-        height: 40px;
-        margin-top: -26px;
+        height: 35px;
+        margin-top: -25px;
         margin-left: 86%;
         cursor: pointer;
     }
     #cross > p {
-        font-size: 45px;
+        font-size: 30px;
     }
 }
 
@@ -355,5 +360,399 @@
         visibility: hidden;
     }
     
+}
+
+/* Care Page styling start*/
+body{
+    margin: 0px;
+    margin-right: -1px
+}
+
+/*container 1*/
+#container{
+    padding-top: 90px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    
+}
+#container > div{
+    background-color: white;
+    width: 100%;
+    overflow-y: hidden;
+}
+#container > div>img{
+    width: 100%;
+    height: 85%;
+}
+#content>div:nth-child(1){
+    margin-top: 100px;
+}
+
+#content{
+   display: flex;
+   flex-direction: column;
+}
+#content > div{
+    width: 100%;
+    
+}
+#content > div:nth-of-type(1){
+   margin-top: 100px;
+   
+}
+#content  h1{
+    font-size: 10px;
+    padding-top: 3%;
+    padding-left: 5%;
+}
+#content h3{
+    font-size: 1.125rem;
+    line-height: 1.778;
+    padding-left: 5%;
+    font-family: 'Roboto', sans-serif;
+}
+#content h2{
+    font-size: 3rem;
+    margin: 0px;
+    line-height: 1.1667;
+    padding-left: 5%;
+    padding-top: 2%;
+    font-weight: 300;
+    color: darkslategray;
+    font-family: 'Noto Serif SC', serif;
+}
+.heading{
+   font-weight:bold;
+   color: black;
+   font-size: 14px;
+   
+}
+#heading{
+    text-align: left;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.start-button{
+   margin-left: 4%;
+   margin-top: 20px;
+   height: 50px;
+   width: 142px;
+   border-radius: 30px;
+   border: none;
+   background-color:#267E6B;
+   color: white;
+   padding-bottom: 0%;
+   text-align: center;
+}
+.start-button:hover{
+    background-color: #0f4d3f;
+    cursor: pointer;
+}
+h5{
+    font-size: 0.99rem;
+    line-height: 1.4286;
+    padding-top: 5%;
+    padding-left: 5%;
+    font-weight: 400;
+    font-family: 'ApercuPro','Roboto','Helvetica Neue','Arial','Noto Sans','sans-serif';
+}
+
+.txt-align{
+    text-align: center;
+}
+
+h2 b{
+    color: teal;
+}
+.care-image{
+    width: 100%;
+
+}
+/* Container 2*/
+#container2{
+    height: 450px;
+    width: 70%;
+    padding-top: 50px;
+    margin: auto;
+    margin-top:0px;
+}
+#container2 >h1{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 2.75rem;
+    line-height: 1.2857;
+    color: #2C333F;
+    text-align: center;
+}
+#container2 >p{
+    font-family: 'ApercuPro','Roboto','Helvetica Neue',Arial,'Noto Sans',sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: center;
+}
+
+#content2{
+    height:auto;
+    display: flex;
+    padding-top: 50px;
+    width: 100%;
+    border: 0px solid;
+    column-gap: 30px;
+}
+#content2 div{
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    border: 0px solid red;
+}
+#content2 img{
+    width: 64px;
+    height: 64px;
+    margin-left: 70px;
+}
+#content2 h2{
+    font-size: 25px;
+    line-height: 1.778;
+    text-align: left;
+    color: #267E6B;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+.age{
+    font-style: italic;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight:600;
+}
+#content2 p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight:600;
+
+}
+
+/* Container 3*/
+#container3{
+    width: 100%;
+    margin: auto;
+    margin-top:150px;
+    border:0px solid;
+}
+#container3 h5,h1{
+    text-align: center;
+    font-size: 15px;
+}
+#container3 h1{
+    font-size: 45px;
+}
+
+.content3 iframe{
+    width: 100%;
+    height: 100%;
+
+}
+.content3{
+    margin: auto;
+    border: 0px solid;
+    height: 750px;
+    width: 100%;
+    background-color: #99ded0;
+}
+.content3 iframe{
+margin-top: 30px;
+    width: 100%;
+    height: 700px;
+    border: 0px solid red;
+}
+   
+
+
+/*Medium Screen care page*/
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+    #optional{
+        margin-left: 73%;
+    }
+    #container{
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+    }  
+    #container > div{
+      background-color: #FFD85D;
+    }
+    #content h2{
+        font-size: 32px;
+        font-weight: 300;
+        color: darkslategray;
+    }
+    .start-button{
+        width: 18%;
+        height: 60px;
+    }
+
+
+    #container > div > img{
+        max-height: 80%;
+    }
+    .container2{
+        height: auto;
+        width: 79%;
+    }
+    .container2 p{
+        font-size: 10px;
+         margin-left: 0%;
+    }
+    .container2 > h1{
+        margin-left: 0%;
+    }
+    #content2{
+        row-gap: 25px;
+        display: flex;
+        flex-direction: column;
+        padding-top: 50px;
+        width: 100%;
+        row-gap: 0px;
+        margin-left: 0%;
+    } 
+
+    #content p{
+        text-align: center;
+    }
+    #content h2{
+        font-size: 25px;
+        color: teal;
+        font-family: 'Playfair Display', serif;
+        text-align: center;
+    }
+    .content3{
+        margin: auto;
+        border: 0px solid;
+        height: 90%;
+        width: 100%;
+        background-color: white;
+        border: 1px solid;
+    }
+    .content3 iframe{
+        width: 100%;
+        height:90%;
+        padding: 1px;
+        margin-top: 0px;
+        background-color: #99ded0;
+    }
+    #container3{
+        width: 100%;
+        height: 500px;
+        margin-top: 500px;
+        border: 0px solid;
+    }
+    
+}
+/*Small Screen care page*/
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    #optional{
+        margin-left: 65%;
+        width: 6%;
+        height: 2%;
+        color: black;
+        padding-top: 15px;
+    }
+    #container{
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+      background-color: #FFD85D;
+    }  
+    #container > div{
+      background-color: #FFD85D;
+    }
+    #content h2{
+        font-size: 35px;
+        margin: 0px;
+        padding-left: 5%;
+        padding-top: 2%;
+        font-weight: 300;
+        color: darkslategray;
+        line-height: 1.4;
+    }
+    .start-button{
+       width: 89%;
+       margin-top: 38px;
+    }
+    #content h1{
+        font-size: 10px;
+        padding-top: 5%;
+      
+    }
+    #content h3{
+       font-size: 17px;
+        padding-left: 3%;
+        line-height: 1.4;
+    }
+    
+    .container2{
+        height: auto;
+        width: 100%;
+    }
+    .container2 p{
+        font-size: 20px;
+         margin-left: 0%;
+    }
+    .container2 > h1{
+        margin-left: 0%;
+    }
+    #content2{
+        row-gap: 25px;
+        display: flex;
+        flex-direction: column;
+        padding-top: 50px;
+        width: 100%;
+        row-gap: 0px;
+        margin-left: 0%;
+        row-gap: 33px;
+    } 
+    
+    #content2 p{
+        text-align: center;
+        margin-left: 0%;
+        font-size: 20px;
+        
+    }
+    #content2 h2{
+        font-size: 25px;
+        color: teal;
+        font-family: 'Playfair Display', serif;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    #content img{
+        width: 27%;
+        height: auto;
+    }
+    
+.content3{
+    margin: auto;
+    border: 0px solid;
+    height: 90%;
+    width: 100%;
+    background-color: white;
+    border: 0px solid;
+}
+.content3 iframe{
+    width: 100%;
+    height:90%;
+    padding: 1px;
+    margin-top: 0px;
+    background-color: #99ded0;
+}
+
+#container3{
+    width: 100%;
+    height: 500px;
+    margin-top: 850px;
+}
+
 }
 
