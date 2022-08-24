@@ -1,3 +1,4 @@
+// Using window.scrollY to bring the variation in the navbar's background
 let nav = document.querySelector('nav');
 
  window.addEventListener('scroll', () => {
