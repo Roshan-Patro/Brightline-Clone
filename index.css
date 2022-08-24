@@ -16,7 +16,7 @@ nav{
 }
 
 /* Navbar icon */
-img{
+.logo img{
     width: 170px;
     height: 120px;
 }
@@ -143,6 +143,24 @@ nav a:hover{
 #jointodayBtn:hover{
     background-color: rgb(27, 90, 75);
     cursor: pointer;
+}
+
+/* Virtual Care Body */
+#VirtualCareBody{
+    display: flex;
+    width: 100vw;
+    border: 1px solid red;
+}
+#VirtualCareBody>div:nth-child(1){
+    width: 50vw;
+}
+#VirtualCareBody>div:nth-child(2){
+    width: 40vw;
+}
+
+#VirtualCareBody>div:nth-child(1)>img{
+    width: 100%;
+    
 }
 
 /* #uponMedmScreen{
