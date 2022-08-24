@@ -1,0 +1,88 @@
+Working on Family Feature
+Day2=>
+1.isssue=> Working on family selection option list=>
+task 1. adding clicakbel functionality on list
+task2. css part for background and styling page
+task3. hovering on text
+
+issue 2=> Care page Top section
+task1.Heading
+task2. adding Images on top 
+task3. Button functionality
+task4. working child program feature .
+
+issue3=> Adding video in page
+task1. Heading
+task2. working on video
+
+Day3=>
+Issue 1=>working on Care page middle section
+task1. heading 
+task2. Images and paragraph
+task3. button and session details 
+
+issue 2.=> Care team funtion 
+task1. Heading 
+task2. Images and details 
+task3. book now functionality
+task3. working on follow us  details adding images and paragraph and heading
+
+
+day4=>
+issue 1=> Working on Membership page  top section
+task1.Heading
+task2.Images
+task3. paragraph
+task4.button functionality and css functionalit
+
+issue2.=>working on  middle section of Membership page
+task1. heading
+task2. images and paragraph
+task3. chart box 
+
+issues 3. Working on explore functionalit
+task1.Heading 
+task2. list
+task 3.button and images
+task4. Working on explore page 
+task5. Added links for more resourse
+
+day5=>
+Issue 1=>Working on footer page 
+task1. email input box
+task2.social media logos
+task3. Working on comapny,about us,faq etc linking pages 
+
+issue2.=>Working on footer page
+task1.conacct deatils 
+task2. term of services  and privacy pages linking
+task3.adding logo in footer
+task4. tagmark  
+............................................................................
+steps to daily branches crt
+
+Checkout and pull the main branch
+git checkout main
+git pull origin main
+Create a new branch (NOTE: Make sure to always make the branch from main by pulling the latest changes)
+
+git branch day-#
+git checkout day-#
+
+After add and making a commit
+git push origin day-#
+
+Make a pull request to the main branch
+
+Assign to your lead
+
+Ask your lead to merge the pull request
+In case you want to bring the new changes from main branch to the current branch
+git checkout main
+git pull origin main
+git checkout day-#
+git merge main
+
+
+
+
