@@ -5,11 +5,19 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>The Brightline Experience</title>
-        <link rel="stylesheet" href="styles/forEmployers.css" />
+        <link rel="icon" href="https://www.linkpicture.com/q/cropped-brightline-favicon.png">
+        <link rel="stylesheet" href="styles/theBrightlineExperience.css" />
+        <link rel="stylesheet" href="modules/navbar.css">
     </head>
     <body>
         <!-- Navbar to be Imported -->
-        <div id="navbar"></div>
+        <nav>
+            <!-- What ever code should be available here, all the codes are present in './module/navbar.js'. 
+            This is because I am using 'Import-Export here. And I am making the type of my script as 'module'.
+            This will only work if I open this 'html' file with 'live server'.  -->
+        </nav>
+
+        <!-- The body of the page -->
         <div id="body-container">
             <!-- Page Heading -->
 
@@ -292,10 +300,13 @@
                             </li>
                             <li>Speech therapy (18 mo - 11)</li>
                         </ul>
-                        <button class="option_details_card_button">Learn more</button>
+                        <button class="option_details_card_button">
+                            Learn more
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
     </body>
 </html>
+<script src="scripts/theBrightlineExperience.js" type="module"></script>
