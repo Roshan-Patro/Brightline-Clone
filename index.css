@@ -7,18 +7,21 @@ nav{
     left: 0;
     top: 0;
     gap: 7vw;
-    height: 88px;
+    height: 80px;
     justify-content: center;
     padding-top: 12px;
     padding-bottom: 12px;
-    transition: 200ms ease-in-out background-color,
-                200ms ease-in-out box-shadow;
+    transition: 200ms ease-in-out background-color;
 }
 
 /* Navbar icon */
 .logo img{
     width: 170px;
     height: 120px;
+}
+
+.logo img:hover{
+    cursor: pointer;
 }
 
 /* For all the quick access links in navbar */
@@ -339,8 +342,7 @@ iframe{
 
 #rightCareHeading{
     text-align: center;
-    margin-top: 100px;
-    margin-bottom: -15px;
+    margin-top: 130px;
 }
 
 #rightCareHeading>h3{
@@ -359,18 +361,55 @@ iframe{
 #rightCareBody{
     display: flex;
     max-width: 100vw;
-    border: 1px solid green;
 }
 
 #rightCareBody>div:nth-child(1){
-    width: 49vw;
-    border: 1px solid red;
-    object-fit: contain;
-
+    width: 55vw;
+    /* object-fit: contain; */
 }
 
 #rightCareBody>div:nth-child(1) img{
     width: 100%;
+    height: 100%;
+}
+
+#rightCareBody>div:nth-child(2){
+    text-align: left;
+    padding-left: 7vw;
+    padding-right: 5vw;
+    padding-bottom: 3vw;
+    width: 41vw;
+}
+
+#rightCareBody>div:nth-child(2) h2{
+    font-size: 3em;
+    color: #267E6B;
+    margin-bottom: 0;
+}
+
+#rightCareBody>div:nth-child(2) p{
+    font-family: ApercuPro,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+    line-height: 1.7;
+}
+
+#rightCareBtn{
+    font-family: ApercuPro,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(38,126,107);
+    height: 50px;
+    width: 170px;
+    border-radius: 150px 150px 150px 150px;
+    border: none;
+    margin-top: 7vh;
+}
+
+#rightCareBtn:hover{
+    background-color: rgb(27, 90, 75);
+    cursor: pointer;
 }
 /* #uponMedmScreen{
     position: absolute;
