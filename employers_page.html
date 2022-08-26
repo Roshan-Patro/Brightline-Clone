@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>For Employers</title>
 
-   <link rel="stylesheet" href="./style/employers_page.css">
+   <link rel="stylesheet" href="./styles/employers_page.css">
    
 </head>
 <body>
@@ -48,7 +48,7 @@
        <h2>Supporting your employees starts with their <b>families</b> </h2>
        <p>Working parents and caregivers are more stressed out than ever, and we’re here to help</p>
     </div>
-    <button id="get-touched">Get in touch</button>
+    <button id="get-touched" onclick="document.getElementById('blog').scrollIntoView()">Get in touch</button>
     </div>
     <div class="top-section-img">
         <img src="https://images.ctfassets.net/96gdpqkm7elu/dYSzvRGfDRKYyONk74UzL/559b52cb059b7ba80da9f326a30e7420/brightline_mom_and_daughters_1_e1f5c0082a.png?w=1440&h=1256&fit=crop&fm=webp&q=90" alt="">
@@ -142,9 +142,114 @@
         <p>Care from expert therapists, psychiatrists, and speech therapists for everything from anxiety and depression to school stress, ADHD, or behavior challenges.</p>
        </div>
        <div>
-        <button id="btn">Bring support to your team</button>
+        <button id="btn" onclick="document.getElementById('form-detail').scrollIntoView()">Bring support to your team</button>
        </div>
     </div>
+</div>
+<div class="heading2">
+    <h1>The bright side for everyone</h1>
+    <h4>Bring support to your team and see the difference for families and your company</h4>
+</div>
+<div id="ever">
+    <div id="ever-right1">
+    <div class="ever-right">
+      <h1>40%</h1>
+      <p>decrease in parent stress associated with training programs that <br> help them manage behavioral health1</p>  
+    </div>
+    <div class="ever-right">
+        <h1>84%</h1>
+        <p>of parents who accessed teletherapy for their child said they had a <br> positive experience2</p>  
+      </div>
+      <div class="ever-right">
+        <h1>78%</h1>
+        <p>lso reported significant improvement in their child’s symptoms since starting teletherapy2</p>  
+      </div>
+      <a href="theBrightlineExperience.html"><button id="btn">See our member experience</button></a>
+    </div>
+    <div>
+        <img src="https://images.ctfassets.net/96gdpqkm7elu/61r7a0eEPJbarqJLqWtkz0/831cbc5c82a8aec808aa856dcaacf4ae/homepage_boy_glasses_mom_6d5c417c5e.png?w=1256&h=1256&fit=crop&fm=webp&q=90" alt="">
+    </div>
+</div>
+<div id="sliding">
+    <div class="slide">
+        <h3>I felt so lost and unsupported after my child's dignosis,and was looking for services for two months, but everywhere was either not taking ne patients or had rediculous waitlists. I am so grateful that Brightline was willing to help us.</h3>
+    </div>
+</div>
+<div class="heading2">
+  <h4>GET IN TOUCH</h4>
+   <h1>Bring Brightline to your team</h1>
+   <h4>Let’s get working families support, together</h4>
+</div>
+<div id="form-detail">
+<form action="#">
+   
+   <div class="user-detail">
+    <div class="input-box">
+        <span class="details">First Name:</span>
+        <input type="text" placeholder="enter your first name">
+    </div>
+    <div class="input-box">
+        <span class="details">Last Name:</span>
+        <input type="text" placeholder="enter your last name">
+    </div>
+    <div class="input-box">
+        <span class="details">Email Address:</span>
+        <input type="text" placeholder="enter your email id">
+    </div>
+    <div class="input-box">
+        <span class="details">Phone Number:</span>
+        <input type="text" placeholder="enter your phone number">
+    </div>
+    <div class="input-box">
+        <span class="details">Company Name:</span>
+        <input type="text" placeholder="enter your company name">
+    </div>
+    <div class="input-box">
+        <span class="details">Num Employees:</span>
+       <select name="" class="employ">
+        <option value="/">Select...</option>
+        <option value="/">0-1,000</option>
+        <option value="/">1,000-5,000</option>
+        <option value="/">5,000-10,000</option>
+       </select>
+    </div>
+    <div class="input-box">
+        <span class="details">Job Title:</span>
+        <input type="text" placeholder="enter your job title">
+    </div>
+    <div class="input-box">
+        <span class="details">Product Interest:</span>
+       <select name="" class="employ">
+        <option value="/">Select...</option>
+        <option value="/">Consultant</option>
+        <option value="/">Employer</option>
+        <option value="/">Health Plan</option>
+       </select>
+    </div>
+    <a href="index.html"><button id="button">Submit</button></a>
+   </div>
+
+</form>
+</div>
+<div class="heading2">
+    <h1>Get tips for your family on the Brightline blog</h1>
+</div>
+<div id="blog">
+    <div class="blog-containt">
+        <img src="https://images.ctfassets.net/96gdpqkm7elu/6BxlkArx91nS3BEQOi2ROI/b4def166d9cca4dbe0fc47a3ca758f53/Spotlight_Series_Honora_Blog_Thumbnail_740x740_729a33fe13.jpg?w=1542&h=1542&fit=pad&fm=webp&q=90" alt="">
+        <h4>FOR EMPLOYERS & PLANS . NOV 2,2021</h4>
+        <p>"No child is an island. Each one is supported bya a village"- Brightline therapist spotlight</p>
+    </div>
+   <div class="blog-containt">
+    <img src="https://images.ctfassets.net/96gdpqkm7elu/LQ4H2nLlwD54S8tEGVR1w/b8726502c7bb1a7cd3b22236cb7ddb48/disruptive_behavior_square_3f42d374a8.jpg?w=1080&h=1080&fit=pad&fm=webp&q=90" alt="">
+    <h4>FOR EMPLOYERS & PLANS . JUL 27,2021</h4>
+    <p>Children's disruptive behaviour can sap work productivity.We have a solution</p>
+   </div>
+   <div class="blog-containt">
+    <img src="https://images.ctfassets.net/96gdpqkm7elu/1Ah4g8N6a1ryaWBb398CNZ/a2e6748a59d21dbe696689a73c86bece/For_Employers_2x_bd587cd26b.svg?w=10&h=10&q=5" alt="">
+    <h4>FOR EMPLOYERS & PLANS . AUG 24,2021</h4>
+    <p>In an age of anxiety, Brightline can help families deal with fear and worry</p>
+   </div>
 </div>
 </body>
 </html>
