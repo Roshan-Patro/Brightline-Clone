@@ -1,3 +1,6 @@
+@import url(//db.onlinewebfonts.com/c/758d40d7ca52e3a9bff2655c7ab5703c?family=Cambria);
+@import url('https://fonts.googleapis.com/css2?family=Gabriela&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -38,6 +41,7 @@ img{
     padding: 0 3%;
 }
 .page_name{
+    font-family: ApercuPro,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif;
     margin: 0px 10px;
     font-size: 12px;
     letter-spacing: 0.6px;
@@ -176,7 +180,7 @@ hr{
     padding: 20px 0;
 }
 
-p{
+.option_card>p{
     font-family: ApercuPro,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif;
     font-weight: 400;
     font-size: 18px;
@@ -212,23 +216,142 @@ iframe{
 
 .option_details_card{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 80%;
-    margin: auto;
+    margin: 50px auto;
 }
 
 .option_details_card>div{
     width: 45%;
+    min-width: 400px;
+    margin: auto;
 }
 
 .option_details_card img{
     width: 100%;
 }
 
+.option_details_card_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .option_details_card .title{
     color: #267E6B;
 }
 
-/* .option_details_card p {
+.option_details_card ul {
+    padding: 50px 20px;
+    font-weight: 600;
+    font-size: 18px;
+}
 
-} */
+.option_details_card button{
+    width: 200px;
+    padding: 18px 28px;
+    border-radius: 28px;
+    border: 1px solid #267E6B;
+    background-color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+    line-height: 14px;
+    transition: 0.5s ease-out;
+    cursor: pointer;
+}
+
+.option_details_card button:hover{
+    background-color: #267E6B;
+    transition: 0.5s ease-in;
+    color: #fff;
+}
+
+#your_journey{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+#your_journey>div{
+    display: flex;
+    min-width: 500px ;
+    flex-direction: column;
+    width: 47%;
+    padding: 0 50px;
+}
+
+#your_journey>hr{
+    border: 1px solid black;
+    z-index: -2;
+}
+
+#your_journey img{
+  
+   height: 30vh;
+   padding: 20px 0 0 0;
+   margin: 0 auto;
+}
+
+#your_journey h4{
+    margin: 0 auto;
+    padding: 60px 0;
+    width: 400px;
+    font-weight: 100;
+    color: #267E6B;
+    font-size: 40px;
+    line-height: 48px;
+    font-family: 'Gabriela',ui-serif,Georgia,Cambria,Times New Roman,Times,serif;
+}
+
+#your_journey_right>h4{
+    margin: 0;
+    padding: 30px 0;
+}
+
+#your_journey_right>#para{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    width: 400px;
+    height: 72px;
+    margin-bottom: 50px;
+}
+
+#your_journey_right>.page_name{
+    margin: 0px;
+}
+
+.circle{
+    position: relative;
+    left: -61px;
+    top: -12px;
+    width: 20px;
+    height: 20px;
+    background-color: #267E6B;
+    border: none;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+#second{
+    top: 17px
+}
+
+#third{
+    top:-70px
+}
+
+#fourth{
+    top: 125px;
+}
+
+#fifth{
+    top:65px;
+}
+
+#sixth{
+    top: 65px;
+}
