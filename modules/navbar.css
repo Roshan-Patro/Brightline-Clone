@@ -32,6 +32,7 @@ nav a{
 /* This will happen if I hover on the navbar links. */
 nav a:hover{
     color: rgb(34, 109, 91);
+    transition: 0.5s;
 }
 
 /* navbar last two buttons (Log in and Sign up) */
@@ -57,6 +58,7 @@ nav a:hover{
     color: white;
     border: none;
     cursor: pointer;
+    transition: 0.5s;
 }
 
 /* Navbar Sign up button */
@@ -76,6 +78,7 @@ nav a:hover{
 #signupBtn:hover{
     background-color: rgb(27, 90, 75);
     cursor: pointer;
+    transition: 0.5s;
 }
 
 /* Declaring a custom class which will work only when I use it to change the background of navbar. */
