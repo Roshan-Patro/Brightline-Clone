@@ -1,0 +1,309 @@
+/* ----------------------Navbar-------------------------------------------- */
+/* Navbar itself */
+nav{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    left: 0;
+    top: 0;
+    gap: 7vw;
+    height: 80px;
+    justify-content: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    transition: 200ms ease-in-out background-color;
+}
+
+/* Navbar icon */
+.logo img{
+    width: 170px;
+    height: 120px;
+}
+
+.logo img:hover{
+    cursor: pointer;
+}
+
+/* For all the quick access links in navbar */
+nav a{
+    font-family: Gabriela,ui-serif,Georgia,Cambria,Times New Roman,Times,serif;
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+}
+
+/* This will happen if I hover on the navbar links. */
+nav a:hover{
+    color: rgb(34, 109, 91);
+}
+
+/* navbar last two buttons (Log in and Sign up) */
+#nav_end{
+    display: flex;
+    gap: 2vw;
+}
+
+/* Navbar Log in button */
+#loginBtn{
+    font-size: 14px;
+    font-weight: bold;
+    width: 95px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 150px 150px 150px 150px;
+    background: none;
+}
+
+/* Navbar Log in button hover effect */
+#loginBtn:hover{
+    background-color: rgba(38,126,107);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Navbar Sign up button */
+#signupBtn{
+    font-size: 14px;
+    font-weight: bold;
+    width: 95px;
+    height: 50px;
+    border: none;
+    color: white;
+    border-radius: 150px 150px 150px 150px;
+    background: none;
+    background-color: rgba(38,126,107);
+}
+
+/* Navbar Sign up button hover effect */
+#signupBtn:hover{
+    background-color: rgb(27, 90, 75);
+    cursor: pointer;
+}
+
+/* Declaring a custom class which will work only when I use it to change the background of navbar. */
+.active_nav {
+    background-color: rgba(255,216,93);
+    box-shadow: 0 0 .5rem rgba(0, 0, 0, .6);
+}
+
+/* The class made by Font awesome website. Since, I have used it for some icons. */
+.nav_links .fa-solid{
+    /* position: relative;
+    top: 0px; */
+    margin-left: 5px;
+}
+
+#header_post_navbar{
+    max-width: 100%;
+    display: flex;
+    width: 100vw;
+}
+
+/* ------------------------Header after Navbar------------------------------ */
+#header_banner img{
+    width: 49vw;
+    height: 870px;
+}
+
+#header_texts{
+    padding-left: 55px;
+    padding-top: 200px;
+}
+
+#span{
+    color: rgba(38,126,107);
+}
+
+#header_texts div:nth-child(1){
+    font-family: Gabriela,ui-serif,Georgia,Cambria,Times New Roman,Times,serif;
+    font-size: 3.3rem;
+    line-height: 1.2;
+    width: 78%;
+    color: rgb(85, 76, 76);
+    margin-bottom: 25px;
+}
+
+#header_texts div:nth-child(2){
+    font-family: ApercuPro,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 2;
+    width: 79%;
+    margin-bottom: 55px;
+}
+
+#jointodayBtn{
+    font-family: ApercuPro,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(38,126,107);
+    height: 50px;
+    width: 150px;
+    border-radius: 150px 150px 150px 150px;
+    border: none;
+}
+
+#jointodayBtn:hover{
+    background-color: rgb(27, 90, 75);
+    cursor: pointer;
+}
+
+/* ---------------------------We’re building a bright future for every child and teen----------------------------------- */
+
+#buildingHeadLine{
+    max-width: 100%;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+#buildingHeadLine>p:nth-child(1){
+    font-weight: 550;
+    font-size: 2.7em;
+    margin-bottom: 2px;
+    color: rgb(53, 50, 50);
+
+}
+#buildingHeadLine>div{
+    font-family: ApercuPro,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif;
+    font-size: 1.1em;
+    line-height: 1.8em;
+    color: rgb(27, 27, 27);
+    width: 80%;
+}
+#buildingBody{
+    display: flex;
+    justify-content: center;
+}
+#buildingBody>img{
+    width: 80%;
+}
+
+/* ---------------------Footer---------------------------------- */
+.footer {
+    display: flex;
+    background-color: #2c333f;
+    color: white;
+    padding: 0.5% 2%;
+    height: 650px;
+    margin-top: 12vw;
+  }
+  .footer > div {
+    margin: 3%;
+  }
+  .left_div {
+    width: 45%;
+  }
+  .leader-name {
+    font-size: 30px;
+  }
+  .fast {
+    font-size: 1em;
+    font-family: ApercuPro,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif;
+    font-weight: 300;
+    line-height: 1.4286;
+  }
+  .email {
+    width: 60%;
+    height: 35px;
+    border-radius: 5px;
+    padding-left: 15px;
+  }
+  .post {
+    margin-top: 25px;
+    font-family: ApercuPro,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif;
+    text-decoration: none;
+  }
+  .post > a {
+    color: white;
+  }
+  .right_div {
+    width: 55%;
+    padding-top: 15px;
+  }
+  .table {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2vw;
+  }
+  .td {
+    width: 30%;
+    margin-top: -15px;
+  }
+  .smooth {
+    margin-left: 0px;
+    color: white;
+  }
+  .stamp_last {
+    margin: 20px 0px;
+  }
+  .line {
+    width: 90%;
+    margin-top: 0px;
+  }
+  .hr_div {
+    height: 110px;
+    background-color: #2c333f;
+    margin-top: 1px;
+    display: flex;
+    padding-top: 30px;
+    padding-left: 3vw;
+  }
+  .hr_div a {
+    color: white;
+  }
+  .hr_div > div {
+    display: flex;
+  }
+  .hr_div > div > a {
+    margin-left: 20px;
+  }
+  .hr_div > div:nth-child(2) {
+    margin-left: 45%;
+  }
+  .post_phon_no_line{
+      font-family: ApercuPro,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif;
+      font-weight: 300;
+      line-height: 1.5;
+      font-size: 0.9em;
+      margin-right: 5.7vw;
+      margin-top: 3vw;
+  }
+  .leader_name_foot{
+      font-family: Gabriela,ui-serif,Georgia,Cambria,Times New Roman,Times,serif;
+      font-weight: 600;
+      font-size: 1.4em;
+  }
+  .social_icon{
+      font-size: 1.8em;
+      display: flex;
+      gap: 2vw;
+      margin-top: 2.8vw;
+      margin-bottom: 2vw;
+  }
+  .face{
+      color: white;
+  }
+  .post_phon_no{
+      font-family: ApercuPro,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif;
+      font-size: 0.9em;
+      margin-bottom: 1.5vw;
+      line-height: 1.5;
+  }
+  .post_phon_no a{
+      color: white;
+  }
+  .post_phon_no i{
+      color: white;
+  }
+  .privacy{
+      font-family: ApercuPro,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif;
+      font-size: 0.9em;
+  }
+  

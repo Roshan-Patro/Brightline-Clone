@@ -1,3 +1,7 @@
+body {
+    margin: 0px;
+    padding: 0;
+  }
 /* Navbar itself */
 nav{
     display: flex;
@@ -154,7 +158,6 @@ nav a:hover{
     max-width: 100%;
     display: flex;
     width: 100vw;
-    /* border: 1px solid red; */
 }
 #VirtualCareBody>div:nth-child(1){
     width: 49vw;
@@ -197,7 +200,6 @@ nav a:hover{
 #VirtualCareHeadLine{
     max-width: 100%;
     width: 100vw;
-    /* border: 1px solid red; */
     display: grid;
     justify-content: center;
     text-align: center;
@@ -365,7 +367,6 @@ iframe{
 
 #rightCareBody>div:nth-child(1){
     width: 55vw;
-    /* object-fit: contain; */
 }
 
 #rightCareBody>div:nth-child(1) img{
@@ -411,6 +412,346 @@ iframe{
     background-color: rgb(27, 90, 75);
     cursor: pointer;
 }
+
+/* ------------------------------------------------------------------------------------------------------------------------------------
+                                                     New Section :- Good news 
+-------------------------------------------------------------------------------------------------------------------------------------*/
+#goodNewsHeading{
+    text-align: center;
+    font-family: Gabriela,ui-serif,Georgia,Cambria,Times New Roman,Times,serif;
+    font-size: 2.7em;
+    color: #2C333F;
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+.newsCard{
+    background-color: rgba(255,216,93);
+}
+.newsCardEven{
+    background-color: rgb(243, 220, 145);
+}
+.newsCard, .newsCardEven{
+    /* position: relative; */
+    min-width: 300px;
+    width: 250px;
+    height: 370px;
+    text-align: center;
+    margin-right: 30px;
+}
+.newsCard>div:nth-child(1), .newsCardEven>div:nth-child(1){
+    font-size: 0.8em;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+.logoDiv{
+    display: flex;
+    width: 70%;
+    margin-left: 14.5%;
+    margin-bottom: 25px;
+}
+.newsLogo{
+    width: 100%;
+}
+.newsCard>div:nth-child(1)>i, .newsCardEven>div:nth-child(1)>i{
+    font-size: 5px;
+}
+.newsCard>div:nth-child(3), .newsCardEven>div:nth-child(3){
+    width: 82%;
+    font-size: 1.5em;
+    margin-left: 8.5%;
+    margin-bottom: 60px;
+    color: rgb(27, 27, 27);
+    font-weight: lighter;
+}
+.newsCard-container {
+    padding: 0 4vw;
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.newsCard-container::-webkit-scrollbar {
+    display: none;
+}
+/* .newsCard>a, .newsCardEven>a{
+    position: absolute;
+    bottom: 25px;
+    left: 36.5%;
+} */
+.pre-btn, .nxt-btn{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid rgba(38,126,107);
+}
+
+.pre-btn:hover{
+    cursor: pointer;
+    /* background-color: rgba(38,126,107); */
+    transform: scale(1.2);
+    transition: all ease 0.2s;
+}
+.nxt-btn:hover{
+    cursor: pointer;
+    /* background-color: rgba(38,126,107); */
+    transform: scale(1.2);
+    transition: all ease 0.2s;
+}
+#sliderBtnDiv{
+    display: flex;
+    gap:2%;
+    margin-left: 47vw;
+    margin-top: 25px;
+}
+#sliderBtnDiv i{
+    font-size: medium;
+    color: rgba(38,126,107);
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------
+                                              New Section :- Get started with Brightline today 
+-------------------------------------------------------------------------------------------------------------------------------------*/
+#getStartedHeading{
+    text-align: center;
+    font-family: Gabriela,ui-serif,Georgia,Cambria,Times New Roman,Times,serif;
+    font-size: 2.7em;
+    color: #2C333F;
+    margin-top: 100px;
+    /* margin-bottom: 40px; */
+}
+#getStartedDiv{
+    margin-left: 9vw;
+    min-width: 80vw;
+    width: 80vw;
+}
+#getStartedDiv1{
+    min-width: 100%;
+    width: 100%;
+    display: flex;
+    margin-bottom: 0.8vw;
+    background-color: #FFF3CE;
+}
+#getStartedDiv1>div:nth-child(1){
+    min-width: 40%;
+    width: 40%;
+}
+#getStartedDiv1>div:nth-child(1) img{
+    min-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+#getStartedDiv1>div:nth-child(2){
+    margin-left: 6%;
+    margin-top: 4.5%;
+    margin-right: 6vw;
+}
+#getStartedDiv1 h2{
+    color: #2C333F;
+}
+#getStartedDiv1 p{
+    font-family: ApercuPro,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif;
+    font-weight: 300;
+    color: #2C333F;
+    line-height: 1.5;
+}
+#getStartedDiv1 button{
+    font-family: ApercuPro,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgba(38,126,107);
+    border: 1px solid rgba(38,126,107);
+    background: none;
+    height: 50px;
+    width: 110px;
+    border-radius: 150px 150px 150px 150px;
+}
+#getStartedDiv1 button:hover{
+    cursor: pointer;
+    background-color: rgba(38,126,107);
+    color: white;
+}
+#getStartedDiv2{
+    min-width: 100%;
+    width: 100%;
+    display: flex;
+    background-color: #FFF3CE;
+}
+#getStartedDiv2>div:nth-child(1){
+    min-width: 40%;
+    width: 40%;
+}
+#getStartedDiv2>div:nth-child(1) img{
+    min-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+#getStartedDiv2>div:nth-child(2){
+    margin-left: 6%;
+    margin-top: 4.5%;
+    margin-right: 6vw;
+}
+#getStartedDiv2 h2{
+    color: #2C333F;
+}
+#getStartedDiv2 p{
+    font-family: ApercuPro,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif;
+    font-weight: 300;
+    color: #2C333F;
+    line-height: 1.5;
+}
+#getStartedDiv2 button{
+    font-family: ApercuPro,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: rgba(38,126,107);
+    border: 1px solid rgba(38,126,107);
+    background: none;
+    height: 50px;
+    width: 170px;
+    border-radius: 150px 150px 150px 150px;
+}
+#getStartedDiv2 button:hover{
+    cursor: pointer;
+    background-color: rgba(38,126,107);
+    color: white;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------
+                                                     Final Section :- Footer 
+-------------------------------------------------------------------------------------------------------------------------------------*/
+.footer {
+    display: flex;
+    background-color: #2c333f;
+    color: white;
+    padding: 0.5% 2%;
+    height: 650px;
+    margin-top: 12vw;
+  }
+  .footer > div {
+    margin: 3%;
+  }
+  .left_div {
+    width: 45%;
+  }
+  .leader-name {
+    font-size: 30px;
+  }
+  .fast {
+    font-size: 1em;
+    font-family: ApercuPro,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif;
+    font-weight: 300;
+    line-height: 1.4286;
+  }
+  .email {
+    width: 60%;
+    height: 35px;
+    border-radius: 5px;
+    padding-left: 15px;
+  }
+  .post {
+    margin-top: 25px;
+    font-family: ApercuPro,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif;
+    text-decoration: none;
+  }
+  .post > a {
+    color: white;
+  }
+  .right_div {
+    width: 55%;
+    padding-top: 15px;
+  }
+  .table {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2vw;
+  }
+  .td {
+    width: 30%;
+    margin-top: -15px;
+  }
+  .smooth {
+    margin-left: 0px;
+    color: white;
+  }
+  .stamp_last {
+    margin: 20px 0px;
+  }
+  .line {
+    width: 90%;
+    margin-top: 0px;
+  }
+  .hr_div {
+    height: 110px;
+    background-color: #2c333f;
+    margin-top: 1px;
+    display: flex;
+    padding-top: 30px;
+    padding-left: 3vw;
+  }
+  .hr_div a {
+    color: white;
+  }
+  .hr_div > div {
+    display: flex;
+  }
+  .hr_div > div > a {
+    margin-left: 20px;
+  }
+  .hr_div > div:nth-child(2) {
+    margin-left: 45%;
+  }
+  .post_phon_no_line{
+      font-family: ApercuPro,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif;
+      font-weight: 300;
+      line-height: 1.5;
+      font-size: 0.9em;
+      margin-right: 5.7vw;
+      margin-top: 3vw;
+  }
+  .leader_name_foot{
+      font-family: Gabriela,ui-serif,Georgia,Cambria,Times New Roman,Times,serif;
+      font-weight: 600;
+      font-size: 1.4em;
+  }
+  .social_icon{
+      font-size: 1.8em;
+      display: flex;
+      gap: 2vw;
+      margin-top: 2.8vw;
+      margin-bottom: 2vw;
+  }
+  .face{
+      color: white;
+  }
+  .post_phon_no{
+      font-family: ApercuPro,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif;
+      font-size: 0.9em;
+      margin-bottom: 1.5vw;
+      line-height: 1.5;
+  }
+  .post_phon_no a{
+      color: white;
+  }
+  .post_phon_no i{
+      color: white;
+  }
+  .privacy{
+      font-family: ApercuPro,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif;
+      font-size: 0.9em;
+  }
+  
+
+
+
+
+
 /* #uponMedmScreen{
     position: absolute;
     top: 0;

@@ -1,6 +1,8 @@
 function navbar(){
     return `
-    <div class="logo"><img src="https://www.hellobrightline.com/assets/brightline-logo.svg?w=163&h=40&fit=thumb&fm=png&q=90" alt=""></div>
+    <div class="logo">
+        <a href="index.html"><img src="https://www.hellobrightline.com/assets/brightline-logo.svg?w=163&h=40&fit=thumb&fm=png&q=90" alt=""></a>
+        </div>
         <div class="nav_links">
             <a href="#">How It Works <i class="fa-solid fa-chevron-down"></i></a>
         </div>

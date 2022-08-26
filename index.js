@@ -39,6 +39,30 @@ navbar_container.innerHTML = navbar();
          count = 0;
      }
  },1000);
+
+//  Good news --> Slider Effect
+const productContainers = [...document.querySelectorAll('.newsCard-container')];
+const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
+const preBtn = [...document.querySelectorAll('.pre-btn')];
+
+productContainers.forEach((item, i) => {
+    let containerDimensions = item.getBoundingClientRect();
+    let containerWidth = containerDimensions.width/2;
+
+    nxtBtn[i].addEventListener('click', () => {
+        item.scrollLeft += containerWidth;
+    })
+
+    preBtn[i].addEventListener('click', () => {
+        item.scrollLeft -= containerWidth;
+    })
+})
+
+
+
+
+
+
 // =======
 // // Using window.scrollY to bring the variation in the navbar's background
 // let nav = document.querySelector("nav");
