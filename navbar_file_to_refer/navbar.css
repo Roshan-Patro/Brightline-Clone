@@ -81,7 +81,7 @@ nav a:hover{
 
 /* Declaring a custom class which will work only when I use it to change the background of navbar. */
 .active_nav {
-    background-color: rgba(255,216,93);
+    background-color: #FFD85D;
     box-shadow: 0 0 .5rem rgba(0, 0, 0, .6);
 }
 
