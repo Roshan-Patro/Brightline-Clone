@@ -3,17 +3,17 @@ function navbar(){
     <div class="logo">
         <a href="index.html"><img src="https://www.hellobrightline.com/assets/brightline-logo.svg?w=163&h=40&fit=thumb&fm=png&q=90" alt=""></a>
         </div>
-        <div class="nav_links">
-            <a href="#">How It Works <i class="fa-solid fa-chevron-down"></i></a>
+        <div class="nav_links" id="howItWorks">
+            How It Works <i class="fa-solid fa-chevron-down"></i>
         </div>
-        <div class="nav_links">
-            <a href="#">Employers & Plans <i class="fa-solid fa-chevron-down"></i></a>
+        <div class="nav_links" id="employers">
+            Employers & Plans <i class="fa-solid fa-chevron-down"></i>
         </div>
-        <div class="nav_links">
-            <a href="#">For Families <i class="fa-solid fa-chevron-down"></i></a>
+        <div class="nav_links" id="forFamilies">
+            For Families <i class="fa-solid fa-chevron-down"></i>
         </div>
-        <div class="nav_links">
-        <a href="#">Careers <i class="fa-solid fa-chevron-down"></i></a>
+        <div class="nav_links" id="careers">
+        Careers <i class="fa-solid fa-chevron-down"></i>
         </div>
         <div id="nav_end">
             <button id="loginBtn">Log in</button>

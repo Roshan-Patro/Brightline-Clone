@@ -1,6 +1,7 @@
 body {
-    margin: 0px;
+    margin: 0;
     padding: 0;
+    /* overflow-x: hidden; */
   }
 /* Navbar itself */
 nav{
@@ -29,16 +30,18 @@ nav{
 }
 
 /* For all the quick access links in navbar */
-nav a{
+.nav_links{
     font-family: Gabriela,ui-serif,Georgia,Cambria,Times New Roman,Times,serif;
     font-size: 14px;
     text-decoration: none;
     color: black;
+    border: 1px solid red;
 }
 
 /* This will happen if I hover on the navbar links. */
-nav a:hover{
+.nav_links:hover{
     color: rgb(34, 109, 91);
+    cursor: pointer;
 }
 
 /* navbar last two buttons (Log in and Sign up) */
@@ -98,20 +101,115 @@ nav a:hover{
     margin-left: 5px;
 }
 
+/* Navbar dropdown List Feature */
+/* How it works */
+#workdrop {
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    max-height: 350px;
+    height: 350px;
+    background-color: #ffd85d;
+    margin-top: 83px;
+    margin-left: -7px;
+    gap: 6vw;
+    padding-top: 7vw;
+    visibility: hidden;
+  }
+  #emp {
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    max-height: 350px;
+    height: 350px;
+    background-color: #ffd85d;
+    margin-top: 83px;
+    margin-left: -7px;
+    gap: 6vw;
+    padding-top: 7vw;
+    visibility: hidden;
+  }
+  #fam {
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    max-height: 350px;
+    height: 350px;
+    background-color: #ffd85d;
+    margin-top: 83px;
+    margin-left: -7px;
+    gap: 6vw;
+    padding-top: 7vw;
+    visibility: hidden;
+  }
+  #carr {
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    max-height: 350px;
+    height: 350px;
+    background-color: #ffd85d;
+    margin-top: 83px;
+    margin-left: -7px;
+    gap: 6vw;
+    padding-top: 7vw;
+    visibility: hidden;
+  }
+  .drop_option{
+    width: 17vw;
+    height: fit-content;
+    margin-left: 5vw;
+  }
+  .drop_option>p:nth-child(1){
+    font-size: 2em;
+    font-weight: bold;
+    color: rgb(53, 50, 50);
+    font-family: ApercuPro,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif;
+  }
+  .drop_option>p:nth-child(2){
+    font-size: 0.9em;
+    font-weight: bold;
+    line-height: 1.2;
+    color: rgb(53, 50, 50);
+    font-family: ApercuPro,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif;
+  }
+  .drop_option_list{
+    border-left: 1px solid black;
+    padding-left: 3vw;
+    height: fit-content;
+    border-left: 1px solid black;
+  }
+  .drop_option_list a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.1em;
+    line-height: 3em;
+    color: rgb(53, 50, 50);
+    font-family: ApercuPro,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif;
+  }
+
+/* Header post navbar */
 #header_post_navbar{
-    max-width: 100%;
+    min-width: 100vw;
     display: flex;
     width: 100vw;
 }
 
 #header_banner img{
-    width: 49vw;
+    min-width: 50vw;
+    width: 50vw;
     height: 870px;
 }
 
 #header_texts{
     padding-left: 55px;
     padding-top: 200px;
+    max-width: 50vw;
+    width: 50vw;
 }
 
 #span{
@@ -527,9 +625,10 @@ iframe{
     /* margin-bottom: 40px; */
 }
 #getStartedDiv{
-    margin-left: 9vw;
+    margin-left: 9.3vw;
     min-width: 80vw;
     width: 80vw;
+    border: 1px solid red;
 }
 #getStartedDiv1{
     min-width: 100%;
@@ -537,6 +636,7 @@ iframe{
     display: flex;
     margin-bottom: 0.8vw;
     background-color: #FFF3CE;
+    border: 1px solid red;
 }
 #getStartedDiv1>div:nth-child(1){
     min-width: 40%;
@@ -631,7 +731,7 @@ iframe{
     background-color: #2c333f;
     color: white;
     padding: 0.5% 2%;
-    height: 650px;
+    height: auto;
     margin-top: 12vw;
   }
   .footer > div {
@@ -747,6 +847,7 @@ iframe{
       font-size: 0.9em;
   }
   
+  
 
 
 
@@ -776,11 +877,12 @@ medium screens
 @media all and (min-width:651px) and (max-width:1024px) {} */
 
 /* small screens
-@media all and (min-width:320px) and (max-width:650px) {} 
+@media all and (min-width:320px) and (max-width:650p
+x) {} 
 -----------------------------------------------------------*/
 
-/* @media all and (min-width:651px) and (max-width:1024px) {
-    nav a{
+@media all and (min-width:320px) and (max-width:1024px) {
+    /* nav a{
         visibility: hidden;
     }
     #nav_end{
@@ -788,5 +890,155 @@ medium screens
     }
     #uponMedmScreen{
         visibility: visible;
+    } */
+    
+    #header_post_navbar{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
-} */
+    #header_texts{
+        min-width: 100vw;
+        width: 100vw;
+        display: grid;
+        background-color: #ffd85d;
+    }
+    #header_banner img{
+        min-width: 100vw;
+        width: 100vw;
+    }
+    #VirtualCareBody{
+        display: flex;
+        flex-wrap: wrap;
+    }
+        
+    #VirtualCareBody>div:nth-child(1){
+        display: block;
+        width: 100vw;
+        border: 1px solid red;
+
+    }
+    #VirtualCareBody>div:nth-child(2){
+        margin-top: 4vw;
+        width: 100vw;
+        font-family: ApercuPro,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif;
+        font-size: 1.1em;
+        line-height: 1.8em;
+        border: 1px solid red;
+    }
+    #forBusinessBody{
+        display: flex;
+        flex-wrap: wrap-reverse;
+        max-width: 100vw;
+    }
+    #rightCareBody{
+        display: grid;
+        justify-content: center;
+    }
+    
+    #rightCareBody>div:nth-child(1){
+        width: 80vw;
+    }
+    
+    #rightCareBody>div:nth-child(2){
+        text-align: left;
+        padding-left: 3vw;
+        padding-bottom: 3vw;
+        width: 80vw;
+    }
+     #getStartedDiv1{
+        min-width: 85vw;
+        width: 85vw;
+        display: grid;
+        text-align: center;
+        margin-bottom: 0.8vw;
+        background-color: #FFF3CE;
+    }
+    #getStartedDiv1>div:nth-child(1){
+        min-width: 100%;
+        width: 100%;
+    }
+    
+    #getStartedDiv1>div:nth-child(2){
+        margin-left: 6%;
+        margin-top: 3%;
+        margin-right: 6vw;
+        margin-bottom: 3%;
+    }
+    
+    #getStartedDiv1 button{
+        width: 100%;
+        border-radius: 150px 150px 150px 150px;
+    }
+    #getStartedDiv2{
+        min-width: 85vw;
+        width: 85vw;
+        display: grid;
+        text-align: center;
+        margin-bottom: 0.8vw;
+        background-color: #FFF3CE;
+    }
+    #getStartedDiv2>div:nth-child(1){
+        min-width: 100%;
+        width: 100%;
+    }
+    
+    #getStartedDiv2>div:nth-child(2){
+        margin-left: 6%;
+        margin-top: 3%;
+        margin-right: 6vw;
+        margin-bottom: 3%;
+    }
+    
+    #getStartedDiv2 button{
+        width: 100%;
+        border-radius: 150px 150px 150px 150px;
+        margin-bottom: 3vw;
+    }
+    .footer {
+        display: grid;
+        background-color: #2c333f;
+        color: white;
+        padding: 0.5% 2%;
+        height: auto;
+        margin-top: 12vw;
+        padding-left: 5vw;
+      }
+      .table {
+        display: grid;
+      }
+      .right_div {
+        width: 98%;
+        padding-top: 15px;
+      }
+      .post_phon_no_line{
+        text-align: justify;
+    }
+    .hr_div {
+        display: grid;
+        padding-top: 30px;
+        padding-left: 4.5vw;
+        gap: 2vw;
+      }
+      .hr_div > div {
+        display: grid;
+      }
+      .hr_div > div:nth-child(2) {
+        margin-left: 0.3vw;
+      }
+      
+}
+
+/* @media all and (min-width:320px) and (max-width:650px) {  */
+    /* nav a{
+        visibility: hidden;
+    }
+    #nav_end{
+        visibility: hidden;
+    }
+    #uponMedmScreen{
+        visibility: visible;
+    } */
+
+
+/* } */
