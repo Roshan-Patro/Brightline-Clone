@@ -1,0 +1,54 @@
+#blog1{
+    width:40%;
+    height:auto;
+    margin:auto;
+    margin-top:40px;
+   
+}
+#blog1>div:nth-child(1){
+    height:auto;
+    width:80%;
+    margin:auto;
+}
+#blog1>div:nth-child(2){
+    height:auto;
+    width:100%;
+    margin:auto;
+    margin-top:30px;
+}
+#blog1>div>img{
+    width:100%;
+    height:auto;
+    margin:auto;
+}
+#blog1>h2{
+    font-family:'Noto Serif SC', serif ;
+    font-weight: 400;
+    font-size: 4rem;
+}
+#blog1-para>p{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height:2;
+    font-weight: 490;
+}
+#blog1-para>h3{
+    font-family: Gabriela,ui-serif,Georgia,Cambria,Times New Roman,Times,serif;
+    font-weight: 400;
+    font-size: 1.60rem;
+    line-height: 1.4;
+}
+span{
+    color:rgb(10, 18, 18);
+    font-weight: bold;
+    text-decoration: underline;
+}
+#btn-2>button{
+    margin-top: 20px;
+    margin-bottom: 90px;
+    padding:10px;
+    margin-left: 10px;
+    border-radius: 20px;
+    background-color: rgb(109, 197, 197);
+    border:1px solid rgb(109, 197, 197) ;
+    color: rgb(2, 83, 83);
+}
