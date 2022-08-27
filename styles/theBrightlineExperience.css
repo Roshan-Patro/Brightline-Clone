@@ -1,5 +1,7 @@
-@import url(//db.onlinewebfonts.com/c/758d40d7ca52e3a9bff2655c7ab5703c?family=Cambria);
+@import url('db.onlinewebfonts.com/c/758d40d7ca52e3a9bff2655c7ab5703c?family=Cambria');
 @import url('https://fonts.googleapis.com/css2?family=Gabriela&display=swap');
+@import url('http://fonts.cdnfonts.com/css/georgia');
+@import url('http://fonts.cdnfonts.com/css/times-new-roman');
 
 *{
     margin: 0;
@@ -8,7 +10,7 @@
 }
 
 img{
-    
+    width: 100%;
     height: 100%;
     object-fit: cover;
     overflow: hidden;
@@ -22,7 +24,7 @@ img{
 #heading{
     display: flex;
     flex-wrap: wrap;
-    height: 70vh;
+    height: 700px;
     
 }
 
@@ -32,7 +34,6 @@ img{
     width: 50%;
     height: 100%;
     justify-content: center;
-   
     text-align: left;
     
 }
@@ -48,10 +49,13 @@ img{
     line-height: 12px;
 }
 #tagline{
+    font-family: 'Times New Roman', ui-serif;
+    display: block;
+    font-weight: 100;
     margin: 10px 10px;
-    font-size: 48px;
-    line-height: 46.0016pxpx;
+    font-size: 68px;
     text-decoration: none solid rgb(44,51,63);
+    line-height: 76px;
 }
 
 #colored_tagline{
@@ -87,6 +91,7 @@ img{
 }
 
 #comparison_chart_box{
+    display: block;
     background-color: #FFD85D;
     padding: 50px 150px 100px 150px;
 }
@@ -354,4 +359,18 @@ iframe{
 
 #sixth{
     top: 65px;
+}
+
+/* Media Queries */
+
+@media screen and (max-width:1100px) {
+    #heading{
+        flex-direction: row;
+        
+    }
+
+    #heading>div{
+        width: 100%;
+        height: 100%;
+    }
 }
