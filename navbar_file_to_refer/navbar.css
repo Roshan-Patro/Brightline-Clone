@@ -13,6 +13,7 @@ nav{
     padding-bottom: 12px;
     transition: 200ms ease-in-out background-color,
                 200ms ease-in-out box-shadow;
+    z-index: 2;
 }
 
 /* Navbar icon */
