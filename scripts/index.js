@@ -1,4 +1,4 @@
-import { navbar } from "./modules/navbar.js";
+import { navbar } from "../modules/navbar.js";
 
 let navbar_container = document.querySelector("nav");
 navbar_container.innerHTML = navbar();
