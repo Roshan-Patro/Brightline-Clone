@@ -1,21 +1,14 @@
+function signup(){
+    location.href = "signup.html"
+}
 
-document.querySelector("get_started").addEventListener("click",function(){
+function learnMore(){
     let logInData = JSON.parse(localStorage.getItem("login"));
-    if(logInData!==null)
-    {
-        location.href = "https://www.hellobrightline.com/employers";
-    }
-    else{
-        alert("Kindly please, Log in first!");
-    }
-})
-function clickBtn(){
-    let logInData = JSON.parse(localStorage.getItem("login"));
-    if(logInData!==null)
-    {
-        location.href = "https://www.hellobrightline.com/employers";
-    }
-    else{
-        alert("Kindly please, Log in first!");
+    if (logInData){
+        alert("Coming Soon")
+    }else{
+        location.href = "signup.html"
     }
 }
+
+
