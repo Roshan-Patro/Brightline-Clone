@@ -125,7 +125,7 @@ function careersub() {
   countcs++;
 }
 
-mediaSdropwork.addEventListener("click", worksub);
-mediaSdropemploye.addEventListener("click", employsub);
-mediaSdropfamily.addEventListener("click", familysub);
-mediaSdropcareer.addEventListener("click", careersub);
+// mediaSdropwork.addEventListener("click", worksub);
+// mediaSdropemploye.addEventListener("click", employsub);
+// mediaSdropfamily.addEventListener("click", familysub);
+// mediaSdropcareer.addEventListener("click", careersub);
