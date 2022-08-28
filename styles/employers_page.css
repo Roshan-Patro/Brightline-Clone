@@ -1,47 +1,250 @@
 /* CSS Styles */
+
+
 body{
     margin:0px;
     margin-top:0px;
     padding:0px;
 }
-#navbar{
-  display:flex;
-  width:100%;
-  height:100px;
-  position:sticky;
-  top:0px;
-  /* border:1px solid red; */
-  background-color:#FFD85D;
-}
-.image{
-    width:190px;
-    height:auto;
-    padding:30px;
-    margin-left: 30px;
-    /* border:1px solid red; */
+nav{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    left: 0;
+    top: 0;
+    gap: 11vw;
+    height: auto;
     justify-content: center;
-    align-items:center;
+    /* padding-top: 2px;
+    padding-bottom: 2px; */
+    transition: 200ms ease-in-out background-color;
+    border: 1px solid red;
 }
-.image>img{
-   margin:auto;
-   cursor:pointer;
+nav>div:nth-child(2){
+    display: flex;
+    gap: 7vw;
 }
-.nav-top{
-    width:100%;
-    height:50px;
-    padding:10px;
-    /* position:sticky;
-    top:0px; */
-    font-family: ApercuPro,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif;
-    font-size:14px;
-    text-align: center;
-    background-color: #9FDCD0;
+#navbarLinksSet{
+    display: flex;
+    gap: 5vw;
 }
-span{
-    text-decoration: underline;
-    color:#1b5247;
+
+/* Navbar icon */
+.logo img{
+    width: 170px;
+    height: 105px;
+    border: 1px solid green;
+    margin-left: 4vw;
+}
+
+.logo img:hover{
+    cursor: pointer;
+}
+
+/* For all the quick access links in navbar */
+.nav_links{
+    font-family: Gabriela,ui-serif,Georgia,Cambria,Times New Roman,Times,serif;
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+}
+
+/* This will happen if I hover on the navbar links. */
+.nav_links:hover{
+    color: rgb(34, 109, 91);
+    cursor: pointer;
+}
+
+/* navbar last two buttons (Log in and Sign up) */
+#nav_end{
+    display: flex;
+    gap: 2vw;
+    margin-right: 2vw;
+}
+
+/* Navbar Log in button */
+#loginBtn{
+    font-size: 14px;
     font-weight: bold;
+    /* width: 7.5vw; */
+    width: 95px;
+    /* height: 4vw; */
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 150px 150px 150px 150px;
+    background: none;
 }
+
+/* Navbar Log in button hover effect */
+#loginBtn:hover{
+    background-color: rgba(38,126,107);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Navbar Sign up button */
+#signupBtn{
+    font-size: 1.1vw;
+    font-weight: bold;
+    /* width: 7.5vw; */
+    width: 95px;
+    /* height: 4vw; */
+    height: 50px;
+    border: none;
+    color: white;
+    border-radius: 150px 150px 150px 150px;
+    background: none;
+    background-color: rgba(38,126,107);
+    margin-right: 4vw;
+}
+
+/* Navbar Sign up button hover effect */
+#signupBtn:hover{
+    background-color: rgb(27, 90, 75);
+    cursor: pointer;
+}
+
+/* Declaring a custom class which will work only when I use it to change the background of navbar. */
+.active_nav {
+    background-color: rgba(255,216,93);
+    box-shadow: 0 0 .5rem rgba(0, 0, 0, .6);
+}
+
+/* The class made by Font awesome website. Since, I have used it for some icons. */
+.nav_links .fa-solid{
+    /* position: relative;
+    top: 0px; */
+    margin-left: 0.3vw;
+}
+
+/* Navbar dropdown List Feature */
+/* How it works */
+#navDropContainer{
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    max-height: 350px;
+    height: 350px;
+    background-color: #ffd85d;
+    margin-top: 83px;
+    margin-left: -7px;
+    gap: 6vw;
+    padding-top: 7vw;
+    visibility: hidden;
+}
+/* #workdrop{
+    visibility: hidden;
+} */
+#workdrop {
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    max-height: 350px;
+    height: 350px;
+    background-color: #ffd85d;
+    margin-top: 83px;
+    margin-left: -7px;
+    gap: 6vw;
+    padding-top: 7vw;
+    visibility: hidden;
+  }
+  #emp {
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    max-height: 350px;
+    height: 350px;
+    background-color: #ffd85d;
+    margin-top: 83px;
+    margin-left: -7px;
+    gap: 6vw;
+    padding-top: 7vw;
+    visibility: hidden;
+  }
+  #fam {
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    max-height: 350px;
+    height: auto;
+    background-color: #ffd85d;
+    margin-top: 83px;
+    margin-left: -7px;
+    gap: 6vw;
+    padding-top: 7vw;
+    visibility: hidden;
+  }
+  #carr {
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    max-height: 350px;
+    height: 350px;
+    background-color: #ffd85d;
+    margin-top: 83px;
+    margin-left: -7px;
+    gap: 6vw;
+    padding-top: 7vw;
+    visibility: hidden;
+  }
+  .drop_option{
+    width: 17vw;
+    height: fit-content;
+    margin-left: 5vw;
+  }
+  .drop_option>p:nth-child(1){
+    font-size: 2em;
+    font-weight: bold;
+    color: rgb(53, 50, 50);
+    font-family: ApercuPro,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif;
+  }
+  .drop_option>p:nth-child(2){
+    font-size: 0.9em;
+    font-weight: bold;
+    line-height: 1.2;
+    color: rgb(53, 50, 50);
+    font-family: ApercuPro,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif;
+  }
+  .drop_option_list{
+    border-left: 1px solid black;
+    padding-left: 3vw;
+    height: fit-content;
+    border-left: 1px solid black;
+  }
+  #fam .drop_option_list{
+    border-left: 1px solid black;
+    padding-left: 3vw;
+    height: auto;
+    border-left: 1px solid black;
+    margin-bottom: 2vw;
+  }
+  .drop_option_list a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.1em;
+    line-height: 3em;
+    color: rgb(53, 50, 50);
+    font-family: ApercuPro,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif;
+  }
+  #fam .drop_option_list a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.1em;
+    line-height: 2.5em;
+    color: rgb(53, 50, 50);
+    font-family: ApercuPro,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif;
+  }
+
 #top-section{
   display:flex;
   flex-wrap:wrap;
