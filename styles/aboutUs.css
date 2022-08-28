@@ -1,0 +1,26 @@
+#banner_second .title {
+  color: #267e6b;
+  font-size: 4rem;
+  text-align: left;
+}
+
+img {
+  width: 100%;
+}
+
+.banner_row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px 0;
+}
+
+.banner_row > div {
+  min-width: 550px;
+  width: 45%;
+  margin: auto;
+}
+
+.banner_para {
+  font-size: 25px;
+  line-height: 40px;
+}
