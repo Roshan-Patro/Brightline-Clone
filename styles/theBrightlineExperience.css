@@ -28,7 +28,7 @@ img{
 #heading{
     display: flex;
     flex-wrap: wrap;
-    height: 700px;
+    height: 850px;
     
 }
 
@@ -365,6 +365,130 @@ iframe{
     top: 65px;
 }
 
+.footer {
+    display: flex;
+    background-color: #2c333f;
+    color: white;
+    padding: 0.5% 2%;
+    height: auto;
+    margin-top: 12vw;
+  }
+  .footer > div {
+    margin: 3%;
+  }
+  .left_div {
+    width: 45%;
+  }
+  .leader-name {
+    font-size: 30px;
+  }
+  .fast {
+    font-size: 1em;
+    font-family: ApercuPro,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif;
+    font-weight: 300;
+    line-height: 1.4286;
+  }
+  .email {
+    width: 60%;
+    height: 35px;
+    border-radius: 5px;
+    padding-left: 15px;
+  }
+  .post {
+    margin-top: 25px;
+    font-family: ApercuPro,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif;
+    text-decoration: none;
+  }
+  .post > a {
+    color: white;
+  }
+  .right_div {
+    width: 55%;
+    padding-top: 15px;
+  }
+  .table {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2vw;
+  }
+  .td {
+    width: 30%;
+    margin-top: -15px;
+  }
+  .smooth {
+    margin-left: 0px;
+    color: white;
+  }
+  .stamp_last {
+    margin: 20px 0px;
+    width: 130px;
+    height: 130px;
+  }
+  .line {
+    width: 90%;
+    margin-top: 0px;
+  }
+  .hr_div {
+    height: 110px;
+    background-color: #2c333f;
+    margin-top: 1px;
+    display: flex;
+    padding-top: 30px;
+    padding-left: 3vw;
+  }
+  .hr_div a {
+    color: white;
+  }
+  .hr_div > div {
+    display: flex;
+  }
+  .hr_div > div > a {
+    margin-left: 20px;
+  }
+  .hr_div > div:nth-child(2) {
+    margin-left: 45%;
+  }
+  .post_phon_no_line{
+      font-family: ApercuPro,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif;
+      font-weight: 300;
+      line-height: 1.5;
+      font-size: 0.9em;
+      margin-right: 5.7vw;
+      margin-top: 3vw;
+  }
+  .leader_name_foot{
+      font-family: Gabriela,ui-serif,Georgia,Cambria,Times New Roman,Times,serif;
+      font-weight: 600;
+      font-size: 1.4em;
+  }
+  .social_icon{
+      font-size: 1.8em;
+      display: flex;
+      gap: 2vw;
+      margin-top: 2.8vw;
+      margin-bottom: 2vw;
+  }
+  .face{
+      color: white;
+  }
+  .post_phon_no{
+      font-family: ApercuPro,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif;
+      font-size: 0.9em;
+      margin-bottom: 1.5vw;
+      line-height: 1.5;
+  }
+  .post_phon_no a{
+      color: white;
+  }
+  .post_phon_no i{
+      color: white;
+  }
+  .privacy{
+      font-family: ApercuPro,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif;
+      font-size: 0.9em;
+  }
+  
+  
 /* Media Queries */
 
 @media screen and (max-width:1100px) {
