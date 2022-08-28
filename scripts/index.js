@@ -83,13 +83,13 @@ function showHowItWorks(){
         dropDownCarr.style.visibility = "hidden";
         dropDownWork.style.visibility = "visible";
         countWorks++;
-        if(countWorks%2===0)
-        {
-            dropDownWork.style.visibility = "visible";
-        }
-        else{
-            dropDownWork.style.visibility = "hidden";
-        }
+        // if(countWorks%2===0)
+        // {
+        //     dropDownWork.style.visibility = "visible";
+        // }
+        // else{
+        //     dropDownWork.style.visibility = "hidden";
+        // }
     }
     else{
         if(countWorks%2===0)
@@ -116,13 +116,13 @@ function showEmployers()
         dropDownCarr.style.visibility = "hidden";
         dropDownEmp.style.visibility = "visible";
         countEmp++;
-        if(countEmp%2===0)
-        {
-            dropDownEmp.style.visibility = "visible";
-        }
-        else{
-            dropDownEmp.style.visibility = "hidden";
-        }
+        // if(countEmp%2===0)
+        // {
+        //     dropDownEmp.style.visibility = "visible";
+        // }
+        // else{
+        //     dropDownEmp.style.visibility = "hidden";
+        // }
     }
     else{
         if(countEmp%2===0)
@@ -150,13 +150,13 @@ function showforFamilies()
         dropDownCarr.style.visibility = "hidden";
         dropDownFam.style.visibility = "visible";
         countFam++;
-        if(countFam%2===0)
-        {
-            dropDownFam.style.visibility = "visible";
-        }
-        else{
-            dropDownFam.style.visibility = "hidden";
-        }
+        // if(countFam%2===0)
+        // {
+        //     dropDownFam.style.visibility = "visible";
+        // }
+        // else{
+        //     dropDownFam.style.visibility = "hidden";
+        // }
     }
     else{
         if(countFam%2===0)
@@ -183,13 +183,13 @@ function showCareers()
         dropDownFam.style.visibility = "hidden";
         dropDownCarr.style.visibility = "visible";
         countCarr++;
-        if(countCarr%2===0)
-        {
-            dropDownCarr.style.visibility = "visible";
-        }
-        else{
-            dropDownCarr.style.visibility = "hidden";
-        }
+        // if(countCarr%2===0)
+        // {
+        //     dropDownCarr.style.visibility = "visible";
+        // }
+        // else{
+        //     dropDownCarr.style.visibility = "hidden";
+        // }
     }
     else{
         if(countCarr%2===0)
@@ -219,6 +219,36 @@ document.querySelector("#signupBtn").addEventListener("click",function(){
 document.querySelector("#loginBtn").addEventListener("click",function(){
     location.href = "login.html";
 })
+
+// Join Today Button
+
+let logInData = JSON.parse(localStorage.getItem("login"));
+
+let jointodayBtn = document.querySelector("#jointodayBtn");
+jointodayBtn.addEventListener("click", function(){
+    location.href = "login.html";
+})
+
+let businessBtn = document.querySelector("#businessBtn");
+businessBtn.addEventListener("click", function(){
+    if(logInData!==null)
+    {
+        location.href = "https://www.hellobrightline.com/employers";
+    }
+    else{
+        alert("Kindly please, Log in first!");
+    }
+}) 
+
+let VirtualCareBtn = document.querySelector("#VirtualCareBtn");
+VirtualCareBtn.addEventListener("click", function(){
+        location.href = "signup.html";
+}) 
+
+let rightCareBtn = document.querySelector("#rightCareBtn");
+rightCareBtn.addEventListener("click", function(){
+    location.href = "login.html";
+}) 
 
 
 
