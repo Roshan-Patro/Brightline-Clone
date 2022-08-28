@@ -1,7 +1,4 @@
-import { navbar } from "../modules/navbar.js";
 
-let navbar_container = document.querySelector("nav");
-navbar_container.innerHTML = navbar();
 
 // navbar_container.innerHTML = navbarMediaQurrMedium();
 
@@ -21,41 +18,7 @@ navbar_container.innerHTML = navbar();
      }
  }
 
- // Using setInterval() to append different texts at the header portion
- let span = document.getElementById("span");
-
- let spanArr = ['you', 'families', 'caregivers', 'therapists', 'coaches','providers', 'depression', 'employees', 'anxiety'];
-
- let count = 0;
- setInterval(function(){
-     span.innerText = spanArr[count];
-     count++;
-     if(count>(spanArr.length-1))
-     {
-         count = 0;
-     }
- },1000);
-
-//  Good news --> Slider Effect
-const productContainers = [...document.querySelectorAll('.newsCard-container')];
-const nxtBtn = [...document.querySelectorAll('.nxt-btn')];
-const preBtn = [...document.querySelectorAll('.pre-btn')];
-
-productContainers.forEach((item, i) => {
-    let containerDimensions = item.getBoundingClientRect();
-    let containerWidth = containerDimensions.width/2;
-
-    nxtBtn[i].addEventListener('click', () => {
-        item.scrollLeft += containerWidth;
-    })
-
-    preBtn[i].addEventListener('click', () => {
-        item.scrollLeft -= containerWidth;
-    })
-})
-
-
-// making navbar dropdowns work
+ // making navbar dropdowns work
 // How it works
 let howWorks = document.querySelector("#howItWorks");
 let emploers = document.querySelector("#employers");
@@ -208,107 +171,3 @@ howWorks.addEventListener("click", showHowItWorks);
 emploers.addEventListener("click", showEmployers);
 forFamilies.addEventListener("click", showforFamilies);
 careers.addEventListener("click", showCareers);
-
-
-// Linking signup page with signup button signupBtn
-document.querySelector("#signupBtn").addEventListener("click",function(){
-    location.href = "signup.html";
-})
-
-// Linking login page with login button
-document.querySelector("#loginBtn").addEventListener("click",function(){
-    location.href = "login.html";
-})
-
-// Join Today Button
-
-let logInData = JSON.parse(localStorage.getItem("login"));
-
-let jointodayBtn = document.querySelector("#jointodayBtn");
-jointodayBtn.addEventListener("click", function(){
-    location.href = "login.html";
-})
-
-let businessBtn = document.querySelector("#businessBtn");
-businessBtn.addEventListener("click", goToBusiness);
-
-
-function goToBusiness(){
-    if(logInData!==null)
-    {
-        location.href = "https://www.hellobrightline.com/employers";
-    }
-    else{
-        alert("Kindly please, Log in first!");
-    }
-} 
-
-
-let VirtualCareBtn = document.querySelector("#VirtualCareBtn");
-VirtualCareBtn.addEventListener("click", function(){
-        location.href = "signup.html";
-}) 
-
-let rightCareBtn = document.querySelector("#rightCareBtn");
-rightCareBtn.addEventListener("click", function(){
-    location.href = "login.html";
-}) 
-
-// let readMoreBtn = document.querySelectorAll("#newsCard-container>div>a");
-// readMoreBtn.forEach(function(ele){
-// ele.addEventListener("click", function(){
-//     if(logInData!==null)
-//     {
-//         location.href = "https://www.businessinsider.com/startup-founders-mental-health-stress-economy-funding-2022-7?IR=T";
-//     }
-//     else{
-//         alert("Kindly please, Log in first!");
-//     }
-// });
-// });
-    
-
-
-
-
-
-
-
-// =======
-// // Using window.scrollY to bring the variation in the navbar's background
-// let nav = document.querySelector("nav");
-
-// window.addEventListener("scroll", () => {
-//     console.log(window.scrollY);
-
-//     if (window.scrollY >= 100) {
-//         nav.classList.add("active_nav");
-//     } else {
-//         nav.classList.remove("active_nav");
-//     }
-// });
-
-// // Using setInterval() to append different texts at the header portion
-// let span = document.getElementById("span");
-
-// let spanArr = [
-//     "you",
-//     "families",
-//     "caregivers",
-//     "therapists",
-//     "coaches",
-//     "providers",
-//     "depression",
-//     "employees",
-//     "anxiety",
-// ];
-
-// let count = 0;
-// setInterval(function () {
-//     span.innerText = spanArr[count];
-//     count++;
-//     if (count > spanArr.length - 1) {
-//         count = 0;
-//     }
-// }, 1000);
-// >>>>>>> main
