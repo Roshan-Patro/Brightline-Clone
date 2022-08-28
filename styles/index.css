@@ -33,7 +33,7 @@ nav>div:nth-child(2){
     width: 170px;
     height: 105px;
     border: 1px solid green;
-    margin-left: 2vw;
+    margin-left: 4vw;
 }
 
 .logo img:hover{
@@ -1119,16 +1119,16 @@ x) {}
         row-gap: 2vw;
     }
     #workdrop{
-        margin-top: 240px;
+        margin-top: 195px;
     }
     #emp{
-        margin-top: 240px;
+        margin-top: 195px;
 
     }
     #fam{
-        margin-top: 240px;
+        margin-top: 195px;
     }
     #carr{
-        margin-top: 240px;
+        margin-top: 195px;
     }
 }  
