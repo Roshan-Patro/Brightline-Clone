@@ -1,8 +1,8 @@
-/* body {
+body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
-  } */
+    /* overflow-x: hidden; */
+  }
 /* Navbar itself */
 nav{
     display: flex;
@@ -17,7 +17,6 @@ nav{
     /* padding-top: 2px;
     padding-bottom: 2px; */
     transition: 200ms ease-in-out background-color;
-    border: 1px solid red;
 }
 nav>div:nth-child(2){
     display: flex;
@@ -25,14 +24,13 @@ nav>div:nth-child(2){
 }
 #navbarLinksSet{
     display: flex;
-    gap: 5vw;
+    gap: 4vw;
 }
 
 /* Navbar icon */
 .logo img{
     width: 170px;
-    height: 105px;
-    border: 1px solid green;
+    height: 95px;
     margin-left: 4vw;
 }
 
@@ -46,7 +44,6 @@ nav>div:nth-child(2){
     font-size: 14px;
     text-decoration: none;
     color: black;
-    border: 1px solid red;
     display: flex;
     align-items: center;
 }
@@ -679,7 +676,6 @@ iframe{
     margin-left: 9.3vw;
     min-width: 80vw;
     width: 80vw;
-    border: 1px solid red;
 }
 #getStartedDiv1{
     min-width: 100%;
@@ -687,7 +683,6 @@ iframe{
     display: flex;
     margin-bottom: 0.8vw;
     background-color: #FFF3CE;
-    border: 1px solid red;
 }
 #getStartedDiv1>div:nth-child(1){
     min-width: 40%;
@@ -932,7 +927,7 @@ medium screens
 x) {} 
 -----------------------------------------------------------*/
 
-@media all and (min-width:420px) and (max-width:1188px) {
+@media all and (max-width:1188px) {
     /* nav a{
         visibility: hidden;
     }
@@ -986,8 +981,6 @@ x) {}
     #VirtualCareBody>div:nth-child(1){
         display: block;
         width: 100vw;
-        border: 1px solid red;
-
     }
     #VirtualCareBody>div:nth-child(2){
         margin-top: 4vw;
@@ -995,7 +988,6 @@ x) {}
         font-family: ApercuPro,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif;
         font-size: 1.1em;
         line-height: 1.8em;
-        border: 1px solid red;
         margin-left: 0;
         padding-left: 3vw;
     }
@@ -1107,7 +1099,7 @@ x) {}
       
 }
 
-@media all and (min-width:420px) and (max-width:868px) {
+@media all and (max-width:868px) {
     nav{
         display: grid;
         background-color: #ffd85d;
