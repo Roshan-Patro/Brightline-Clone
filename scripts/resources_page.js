@@ -27,5 +27,13 @@ let elements = document.querySelectorAll("#big-container>div");
 elements.forEach(function(ele) {
     ele.addEventListener('click', function() {
         location.href ="blog.html";
+        if(logInData!==null)
+    {
+        location.href = "https://www.hellobrightline.com/employers";
+    }
+    else{
+        alert("Kindly please, Log in first!");
+    }
     });
 })
+
