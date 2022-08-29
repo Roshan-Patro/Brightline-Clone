@@ -23,7 +23,8 @@ form.addEventListener("submit",function(e){
         }
     })
     if(flag===false){
-        alert("OOPS! User Does not Exist")
+        alert("Please, Signup first!")
+        window.location.href=`signup.html`
     } 
 })
 signup_page.addEventListener("click",function(){

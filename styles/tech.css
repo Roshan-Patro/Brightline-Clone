@@ -193,6 +193,7 @@ nav>div:nth-child(2){
 #right2{
     padding-top: 1px;
     width: 50%;
+    border-left: 1px solid black;
    
     
     

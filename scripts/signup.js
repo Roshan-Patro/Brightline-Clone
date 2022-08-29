@@ -18,5 +18,6 @@ let form=document.querySelector("form")
             signupls.push(obj)
             localStorage.setItem("signup",JSON.stringify(signupls));
             alert("Successfully Signed in!")
+            window.location.href=`login.html`
         }
     })
