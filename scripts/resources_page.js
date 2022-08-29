@@ -1,22 +1,22 @@
-import { navbar } from "../modules/navbar.js";
+// import {navbar} from "../modules/navbar.js";
 
-let navbar_container = document.querySelector("nav");
-navbar_container.innerHTML = navbar();
+// let navbar_container = document.querySelector("nav");
+// navbar_container.innerHTML = navbar();
 
-// navbar_container.innerHTML = navbarMediaQurrMedium();
+// // navbar_container.innerHTML = navbarMediaQurrMedium();
 
-// Using window.scrollY to bring the variation in the navbar's background
-let nav = document.querySelector("nav");
+// // Using window.scrollY to bring the variation in the navbar's background
+// let nav = document.querySelector("nav");
 
-window.addEventListener("scroll", () => {
-    console.log(window.scrollY);
+// window.addEventListener("scroll", () => {
+//     console.log(window.scrollY);
 
-    if (window.scrollY >= 100) {
-        nav.classList.add("active_nav");
-    } else {
-        nav.classList.remove("active_nav");
-    }
-});
+//     if (window.scrollY >= 100) {
+//         nav.classList.add("active_nav");
+//     } else {
+//         nav.classList.remove("active_nav");
+//     }
+// });
 
 // code for redirecting to blog.html
 
@@ -27,13 +27,7 @@ let elements = document.querySelectorAll("#big-container>div");
 elements.forEach(function(ele) {
     ele.addEventListener('click', function() {
         location.href ="blog.html";
-        if(logInData!==null)
-    {
-        location.href = "https://www.hellobrightline.com/employers";
-    }
-    else{
-        alert("Kindly please, Log in first!");
-    }
+        
     });
 })
 
