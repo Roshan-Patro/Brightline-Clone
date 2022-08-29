@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
   }
 /* Navbar itself */
 nav{
@@ -30,7 +30,7 @@ nav>div:nth-child(2){
 /* Navbar icon */
 .logo img{
     width: 170px;
-    height: 95px;
+    height: 85px;
     margin-left: 4vw;
 }
 
@@ -107,7 +107,7 @@ nav>div:nth-child(2){
 /* Declaring a custom class which will work only when I use it to change the background of navbar. */
 .active_nav {
     background-color: rgba(255,216,93);
-    box-shadow: 0 0 .5rem rgba(0, 0, 0, .6);
+    box-shadow: 0 0 .4rem rgba(0, 0, 0, .6);
 }
 
 /* The class made by Font awesome website. Since, I have used it for some icons. */
@@ -254,7 +254,7 @@ nav>div:nth-child(2){
 }
 
 #header_texts{
-    padding-left: 55px;
+    padding-left: 5vw;
     padding-top: 200px;
     max-width: 50vw;
     width: 50vw;
@@ -579,11 +579,20 @@ iframe{
 }
 .newsCard, .newsCardEven{
     /* position: relative; */
+    display: flex;
+    flex-direction: column;
     min-width: 300px;
     width: 250px;
     height: 370px;
     text-align: center;
     margin-right: 30px;
+}
+.readMoreDiv{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 1.5vw;
 }
 .newsCard>div:nth-child(1), .newsCardEven>div:nth-child(1){
     font-size: 0.8em;
@@ -625,11 +634,6 @@ iframe{
 .newsCard-container::-webkit-scrollbar {
     display: none;
 }
-/* .newsCard>a, .newsCardEven>a{
-    position: absolute;
-    bottom: 25px;
-    left: 36.5%;
-} */
 .pre-btn, .nxt-btn{
     height: 40px;
     width: 40px;
@@ -937,6 +941,11 @@ x) {}
     #uponMedmScreen{
         visibility: visible;
     } */
+    /* html, body {
+        overflow-x: hidden !important;
+        margin: 0;
+        padding: 0;
+      } */
     nav{
         display: grid;
         background-color: #ffd85d;
@@ -966,6 +975,7 @@ x) {}
         min-width: 100%;
         width: 100%;
         display: grid;
+        margin: auto;
         background-color: #ffd85d;
         margin-top: 15vw;
     }
@@ -1002,7 +1012,7 @@ x) {}
     }
     
     #rightCareBody>div:nth-child(1){
-        width: 80vw;
+        width: 90vw;
     }
     
     #rightCareBody>div:nth-child(2){
@@ -1011,9 +1021,16 @@ x) {}
         padding-bottom: 3vw;
         width: 80vw;
     }
+    /* #getStartedDiv{
+        display: grid;
+        justify-content: center;
+    } */
+    #getStartedHeading{
+        margin-left: -0.8vw;
+    }
      #getStartedDiv1{
-        min-width: 85vw;
-        width: 85vw;
+        min-width: 81vw;
+        width: 81vw;
         display: grid;
         text-align: center;
         margin-bottom: 0.8vw;
@@ -1036,8 +1053,8 @@ x) {}
         border-radius: 150px 150px 150px 150px;
     }
     #getStartedDiv2{
-        min-width: 85vw;
-        width: 85vw;
+        min-width: 81vw;
+        width: 81vw;
         display: grid;
         text-align: center;
         margin-bottom: 0.8vw;
@@ -1123,4 +1140,11 @@ x) {}
     #carr{
         margin-top: 195px;
     }
+    /* #header_texts{
+        min-width: 93%;
+        width: 93%;
+        display: grid;
+        background-color: #ffd85d;
+        margin-top: 15vw;
+    } */
 }  
