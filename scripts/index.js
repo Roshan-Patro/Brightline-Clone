@@ -81,7 +81,11 @@ function showHowItWorks(){
         dropDownEmp.style.visibility = "hidden";
         dropDownFam.style.visibility = "hidden";
         dropDownCarr.style.visibility = "hidden";
-        dropDownWork.style.visibility = "visible";
+        // if(countWorks%2!==0)
+        // {
+        //     countWorks++;
+        // }
+        // dropDownWork.style.visibility = "visible";
         // countWorks++;
         // if(countWorks%2===0)
         // {
@@ -143,12 +147,27 @@ function showEmployers()
 
 function showforFamilies()
 {
+    // if((dropDownWork.style.visibility = "visible") || (dropDownEmp.style.visibility = "visible") || (dropDownCarr.style.visibility = "visible"))
+    // {
+    //     dropDownWork.style.visibility = "hidden";
+    //     dropDownEmp.style.visibility = "hidden";
+    //     dropDownCarr.style.visibility = "hidden";
+    // }
+    // if(countFam%2===0)
+    // {
+    //     dropDownFam.style.visibility = "visible";
+    // }
+    // else{
+    //     dropDownFam.style.visibility = "hidden";
+    // }
+    // countFam++;
+
     // if((countWorks>0) || (countEmp>0) || (countCarr>0))
     // {
-        dropDownWork.style.visibility = "hidden";
-        dropDownEmp.style.visibility = "hidden";
-        dropDownCarr.style.visibility = "hidden";
-        dropDownFam.style.visibility = "visible";
+        // dropDownWork.style.visibility = "hidden";
+        // dropDownEmp.style.visibility = "hidden";
+        // dropDownCarr.style.visibility = "hidden";
+        // dropDownFam.style.visibility = "visible";
         // countFam++;
         // if(countFam%2===0)
         // {
@@ -254,18 +273,18 @@ rightCareBtn.addEventListener("click", function(){
     location.href = "login.html";
 }) 
 
-// let readMoreBtn = document.querySelectorAll("#newsCard-container>div>a");
-// readMoreBtn.forEach(function(ele){
-// ele.addEventListener("click", function(){
-//     if(logInData!==null)
-//     {
-//         location.href = "https://www.businessinsider.com/startup-founders-mental-health-stress-economy-funding-2022-7?IR=T";
-//     }
-//     else{
-//         alert("Kindly please, Log in first!");
-//     }
-// });
-// });
+let readMoreBtn = document.querySelectorAll(".readMore");
+readMoreBtn.forEach(function(ele){
+ele.addEventListener("click", function(){
+    if(logInData!==null)
+    {
+        location.href = "https://www.businessinsider.com/startup-founders-mental-health-stress-economy-funding-2022-7?IR=T";
+    }
+    else{
+        alert("Kindly please, Log in first!");
+    }
+});
+});
     
 
 
