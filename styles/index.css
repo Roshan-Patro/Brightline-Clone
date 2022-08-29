@@ -107,7 +107,7 @@ nav>div:nth-child(2){
 /* Declaring a custom class which will work only when I use it to change the background of navbar. */
 .active_nav {
     background-color: rgba(255,216,93);
-    box-shadow: 0 0 .5rem rgba(0, 0, 0, .6);
+    box-shadow: 0 0 .4rem rgba(0, 0, 0, .6);
 }
 
 /* The class made by Font awesome website. Since, I have used it for some icons. */
