@@ -10,7 +10,6 @@ A clone of hellobrightline.com, a Healthcare website specifically for kids and t
 
 
 
-## Screenshots
 
 ![App Screenshot](https://roshan-patro.github.io/images/Brightline_CoverPage.png)
 
