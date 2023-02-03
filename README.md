@@ -26,13 +26,15 @@
 
 <br />
 
-<p align="center">
+<!-- <p align="center">
   <br />&#10023;
   <a href="#Demo">View Demo</a> &#10023;
   <a href="#Getting-Started">Getting Started</a> &#10023; 
   <a href="#Install">Installing</a> &#10023;
   <a href="#Contact">Author</a> &#10023;
-</p>
+</p> -->
+
+## More about this project
 
 It’s Group (of 5) frontend project where we've used HTML, CSS and JavaScript to build the frontend of the website with all relevant features and functionalities. This project has been made with in a span of 4 days. 
 
@@ -55,9 +57,27 @@ It’s Group (of 5) frontend project where we've used HTML, CSS and JavaScript t
 
 ## Glimpses of Brightline-Clone 🙈 :
 
+<table>
+  <tr>
+    <td><img src="https://user-images.githubusercontent.com/107461385/216688303-11549b50-7f87-4d42-ba51-da0dec437dad.PNG" alt="home" /></td>
+    <td><img src="https://user-images.githubusercontent.com/107461385/216688835-2956fd54-d6f7-4bab-88ec-76a358734b93.PNG" alt="exp" /></td>
+  </tr>
+  
+  <tr>
+    <td><img src="https://user-images.githubusercontent.com/107461385/216690240-872c11e4-12d0-4743-a8f6-276040b8394d.PNG" alt="aboutUs" /></td>
+    <td><img src="https://user-images.githubusercontent.com/107461385/216690680-6d87e901-6b5f-451e-837e-53a33b1f6b00.PNG" alt="exp" /></td>
+  </tr>
+</table>
+
+## Contributors -
+
+* [T Roshan Kumar Patro](https://github.com/Roshan-Patro)
+* [Angel Saikia](https://github.com/Dhunu)
+* [Jagriti Kumari](https://github.com/jkumari25)
+* [Jyotsna gavtade](https://github.com/Jyo20)
+* [Shwetanshu Shekhar](https://github.com/Shwetanshu89)
+
 <br />
-
-
 
 ## Contact
 
